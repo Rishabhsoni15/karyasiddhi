@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Federo&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: white;
+  box-sizing: border-box;
+  /* overflow: hidden; */
+  font-family: "Montserrat", sans-serif !important;
+}
+
+ul li {
+  font-family: "Montserrat", sans-serif !important;
+  font-weight: 500;
+}
+.active-home::before {
+  position: absolute;
+  content: "";
+  bottom: -46px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 8px solid #ff4332;
+  opacity: 1; /* Always visible — match "active" behavior */
+}
+.active-home2::before {
+  position: absolute;
+  content: "";
+  bottom: -46px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 9px solid #ff4332;
+  opacity: 1; /* Always visible — match "active" behavior */
+}
+.active-home3::before {
+  position: absolute;
+  content: "";
+  top: -9.5px;
+  left: 12%;
+  transform: translatey(100%);
+  width: 0;
+  height: 0;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 8px solid #ff4332;
+  opacity: 1; /* Always visible — match "active" behavior */
+}
+
+.nav-arrow::before {
+  content: "";
+  position: relative;
+  bottom: -35px; /* Align arrow at bottom of nav item */
+  left: 40%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 9px solid #ff4332;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+.nav-arrow2::before {
+  content: "";
+  position: relative;
+  bottom: -38px; /* Align arrow at bottom of nav item */
+  left: 40%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 9px solid #ff4332;
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+}
+
+/* Trigger on hover */
+.nav-arrow:hover::before {
+  opacity: 1;
+}
+.group:hover .nav-arrow::before {
+  opacity: 1;
+  bottom: -47px;
+}
+.banner-content::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 5px;
+  width: 2px;
+  height: 78%;
+  background: #ff4332;
+}
+
+.trusted-area::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(52, 45, 44, 0.7);
+}
+
+@media (max-width: 640px) {
+  @keyframes fallFromTop {
+    0% {
+      top: -20px;
+      opacity: 0;
+    }
+    10% {
+      opacity: 1;
+    }
+    90% {
+      top: 90%; /* Adjusted to be relative to the new bottom position */
+      opacity: 1;
+    }
+    100% {
+      top: unset;
+      bottom: 5rem; /* Matches 'bottom-20' (5rem) */
+      opacity: 1;
+    }
+  }
+
+  @keyframes riseToTop {
+    0% {
+      bottom: 5rem; /* Start at the new final position (bottom-20) */
+      opacity: 1;
+    }
+    10% {
+      bottom: 25%; /* Adjusted dip relative to new bottom position */
+      opacity: 1;
+    }
+    80% {
+      opacity: 0;
+    }
+    100% {
+      top: -20px;
+      opacity: 0;
+    }
+  }
+}
