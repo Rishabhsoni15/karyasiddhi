@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import NavBar from "../Component/NavBar";
 import ExtraSection from "../Component/ExtraSection.jsx";
-import Button from "..Component/Button";
+import Button from "../Component/Button";
 import Footer1 from "../Component/Footer1";
 import { IdFetch } from "../Component/IdFetch";
 import WhatsappButton from "../Component/WhatsappButton";
