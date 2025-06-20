@@ -4,9 +4,8 @@ import { IdFetch } from "../Component/IdFetch.jsx";
 
 function ExtraSection({
   type = "gallery",
-
-  mode = "filter", // NEW PROP
-  breadcrumbLinks = [], // For breadcrumb mode
+  mode = "filter",
+  breadcrumbLinks = [],
 }) {
   const location = useLocation();
   const [titleOptions, setTitleOptions] = useState([
@@ -39,7 +38,7 @@ function ExtraSection({
 
   useEffect(() => {
     const fetchTitles = async () => {
-      if (mode === "breadcrumb") return; // Skip fetching for breadcrumbs
+      if (mode === "breadcrumb") return;
       const id = await IdFetch();
       let apiUrl = "";
 
@@ -78,27 +77,24 @@ function ExtraSection({
                 {displayTitle}
               </h1>
 
-              {/* 👇 Conditional Rendering */}
+              {/* FILTER MODE */}
               {mode === "filter" ? (
                 <nav
-                  className="absolute bg-CoBg right-0 bottom-0"
+                  className="absolute bg-CoBg right-0 bottom-0 w-full overflow-x-auto"
                   aria-label="filters"
                 >
-                  <ul className="p-0 m-0 flex items-center justify-center   w-[100%] h-[62px] ">
+                  <ul className="flex items-center gap-x-[1px] h-auto overflow-x-auto overflow-y-hidden p-0 m-0 whitespace-nowrap scrollbar-default max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
                     {titleOptions.map((item) => {
                       const isActive = item.label.trim() === activeTitle.trim();
                       return (
-                        <li key={item.label}>
+                        <li key={item.label} className="inline-block">
                           <Link
                             to={buildLink(item)}
-                            className={`leading-[60px] text-[14px] py-[22px] px-[20px]  font-semibold text-[#3f3836] 
-                              
-                              ${
-                                isActive
-                                  ? "bg-white text-black"
-                                  : "hover:bg-white"
-                              }
-                            `}
+                            className={`inline-block whitespace-nowrap leading-[60px] text-[14px] px-[20px] font-semibold text-[#3f3836] ${
+                              isActive
+                                ? "bg-white text-black"
+                                : "hover:bg-white"
+                            }`}
                           >
                             {item.label}
                           </Link>
@@ -108,6 +104,7 @@ function ExtraSection({
                   </ul>
                 </nav>
               ) : (
+                // BREADCRUMB MODE
                 <nav
                   className="absolute right-0 bottom-0"
                   aria-label="breadcrumb"

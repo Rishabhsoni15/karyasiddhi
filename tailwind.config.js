@@ -158,5 +158,6 @@ riseToTop :{
       },
     },
   },
-  plugins: [flowbiteReact],
+  plugins: [flowbiteReact,require('tailwind-scrollbar-hide')],
+
 });
