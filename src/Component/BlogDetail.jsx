@@ -179,16 +179,16 @@ const BlogDetail = () => {
                         <img
                           src={`https://technolitics-s3-bucket.s3.ap-south-1.amazonaws.com/multitenantwebbuilder-s3-bucket/${review.image}`}
                           alt="Review"
-                          className="md:w-[170px] w-full h-full md:h-[170px] md:ml-0 ml-5 object-cover"
+                          className="md:w-[170px] w-full h-full md:h-[170px] md:ml-0 object-cover"
                         />
-                        <div className="md:pl-[40px] pl-5">
+                        <div className="md:pl-[40px] pl-[4px]">
                           <p className="text-[#3F3836] font-bold leading-[34px] text-[20px]">
                             {review.name}
                           </p>
                           <p className="text-[16px] text-redwala font-normal leading-[34px] tracking-[0.7px]">
                             {review.companyProfile}
                           </p>
-                          <p className="text-[16px] font-semibold text-[#838999] leading-[34px] tracking-[0.7px]">
+                          <p className="text-[16px] font-semibold pl-[2px] text-[#838999] leading-[34px] tracking-[0.7px]">
                             {isExpanded || !isLong
                               ? review.review
                               : `${shortDesc}... `}
