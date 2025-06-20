@@ -8,7 +8,6 @@ import { FaFacebookSquare, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation, Autoplay } from "swiper/modules";
-import Blogs from "../component/Blogs.jsx";
 import BookUrSeat from "./BookUrSeat.jsx";
 import WhatsappButton from "../Component/WhatsappButton.jsx";
 
