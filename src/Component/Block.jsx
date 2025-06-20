@@ -1,5 +1,5 @@
 import React from "react";
-
+//jfhkgjhkgkjlghkjllghkgot
 const Block = ({ icons, name, desc }) => {
   return (
     <div className="mx-4 ">
