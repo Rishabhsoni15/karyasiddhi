@@ -1,6 +1,6 @@
 import React from "react";
-import EnterAnimation from "../Component/EnterAnimation";
-import NavBar from "../Component/NavBar.jsx";
+import EnterAnimation from "../component/EnterAnimation.jsx";
+
 import Banner from "../Component/Banner.jsx";
 import Cowork from "../Component/Cowork.jsx";
 import Ourcard from "../Component/Ourcard.jsx";
@@ -16,6 +16,7 @@ import Tiup from "../Component/Tiup.jsx";
 import Footer1 from "../Component/Footer1.jsx";
 import Downpage from "../Component/Downpage.jsx";
 import WhatsappButton from "../Component/WhatsappButton.jsx";
+import NavBar from "../component/NavBar.jsx";
 function App() {
   return (
     <>
