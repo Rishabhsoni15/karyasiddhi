@@ -368,7 +368,7 @@ function NavBar() {
 
           {/* Menu Items */}
           <ul className="flex flex-col px-6 space-y-6   text-md">
-            <li className="inline-block relative">
+            <li className="inline-block border-b-[1px] relative">
               <Link
                 to="/"
                 className="relative mr-[10px] w-[45px] cursor-pointer "
@@ -376,52 +376,52 @@ function NavBar() {
                 Home
               </Link>
             </li>
-            <li className="inline-block relative">
+            <li className="inline-block border-b-[1px] relative">
               <Link
                 to="/service"
-                className="cursor-pointer hover:underline flex items-center gap-1 "
+                className="cursor-pointer hover:underline flex items-center gap-2 "
               >
                 Our Services
                 <GoChevronDown className="text-xs" />
               </Link>
             </li>
-            <li className="inline-block relative">
+            <li className="inline-block border-b-[1px] relative ">
               <Link
                 to="/locations"
-                className="cursor-pointer hover:underline flex items-center gap-1 "
+                className="cursor-pointer hover:underline flex items-center gap-2 "
               >
                 Locations
-                <GoChevronDown className="text-xs" />
+                <GoChevronDown className="text-xs right-0 " />
               </Link>
             </li>
-            <li className="inline-block relative">
+            <li className="inline-block border-b-[1px] relative">
               <Link to="/gallery" className="cursor-pointer ">
                 Gallery
               </Link>
             </li>
-            <li className="inline-block relative">
+            <li className="inline-block border-b-[1px] relative">
               <Link to="/blogs" className="cursor-pointer ">
                 Blogs
               </Link>
             </li>
-            <li className="inline-block relative">
+            <li className="inline-block border-b-[1px]  relative">
               <Link href="/contact" className="cursor-pointer ">
                 Contact Us
               </Link>
             </li>
           </ul>
           <a
-            href="#"
-            className="flex items-center gap-2  mx-5 text-gray-800 mt-15 mb-1 pr-3"
+            href="mailto:hello@karyasiddhico.work"
+            className="flex items-center gap-2  mx-5 text-black mt-16 mb-1 pr-3"
           >
-            <FaEnvelopeOpenText className="text-gray-600 " />
+            <FaEnvelopeOpenText className=" text-black" />
             hello@karyasiddhico.work
           </a>
           <a
-            href="#"
-            className="flex items-center gap-2 text-gray-800 mx-5  00 pr-3"
+            href="tel:9669231006"
+            className="flex items-center gap-2 text-black mx-5 mt-7  00 pr-3"
           >
-            <FiPhoneCall className="text-gray-600 " />
+            <FiPhoneCall className="text-black " />
             +91 88892 51000
           </a>
         </div>
