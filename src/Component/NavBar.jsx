@@ -7,7 +7,7 @@ import { GoChevronDown } from "react-icons/go";
 import { IoMdArrowDropup } from "react-icons/io";
 import { Link } from "react-router-dom";
 
-function Navbar() {
+function NavBar() {
   const [open, setOpen] = useState(false);
 
   const [isScrolled, setIsScrolled] = useState(false);
@@ -437,4 +437,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default NavBar;
