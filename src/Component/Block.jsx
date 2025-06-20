@@ -8,7 +8,7 @@ const Block = ({ icons, name, desc }) => {
           src={icons}
           className="text-[60px] w-[60px] h-[60px] mt-[15px] mb-[15px]  max-w-[100%] "
         ></img>
-        <h4 className="text-[22px] leading-[30px] pt-[5px] pb-[22px] font-bold text-[#3f3836]  hover:text-redwala">
+        <h4 className="text-[22px] leading-[30px] pt-[5px] pb-[22px] font-bold text-[#3f3836]  hover:text-[#ff4332]">
           {name}
         </h4>
         <p className="font-[500] leading-[34px] text-[#74706f] pr-[10px] tracking-[-0.3px]">
