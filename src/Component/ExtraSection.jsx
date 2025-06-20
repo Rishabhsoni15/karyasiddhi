@@ -71,9 +71,9 @@ function ExtraSection({
     >
       <div className="w-full px-4 mx-auto max-w-screen-xl">
         <div className="flex flex-wrap -mx-4">
-          <div className="w-full px-4">
+          <div className="w-full md:px-4 px-0">
             <div className="h-[350px] flex items-center relative">
-              <h1 className="text-[60px] text-white font-bold tracking-[-1.5px] m-0">
+              <h1 className="text-[60px] text-white pl-4 font-bold tracking-[-1.5px] m-0">
                 {displayTitle}
               </h1>
 
@@ -83,7 +83,7 @@ function ExtraSection({
                   className="absolute bg-CoBg right-0 bottom-0 w-full overflow-x-auto"
                   aria-label="filters"
                 >
-                  <ul className="flex items-center gap-x-[1px] h-auto overflow-x-auto overflow-y-hidden p-0 m-0 whitespace-nowrap scrollbar-default max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
+                  <ul className="flex items-center  h-auto overflow-x-auto overflow-y-hidden p-0 m-0 whitespace-nowrap scrollbar-default max-w-screen-sm sm:max-w-screen-md md:max-w-screen-lg lg:max-w-screen-xl">
                     {titleOptions.map((item) => {
                       const isActive = item.label.trim() === activeTitle.trim();
                       return (
