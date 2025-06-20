@@ -1,7 +1,7 @@
 import React from "react";
-import NavBar from "../component/NavBar";
-import Blogs from "../component/Blogs";
-import Footer1 from "../component/Footer1";
+import NavBar from "../Component/NavBar";
+import Blogs from "../Component/Blogs";
+import Footer1 from "../Component/Footer1";
 import ExtraSection from "../Component/ExtraSection";
 import WhatsappButton from "../Component/WhatsappButton";
 

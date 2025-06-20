@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import NavBar from "../component/NavBar.jsx";
-import Footer1 from "../component/Footer1.jsx";
+import NavBar from "../Component/NavBar.jsx";
+import Footer1 from "../Component/Footer1.jsx";
 import ExtraSection from "../Component/ExtraSection.jsx";
 import GallerySection from "../Component/GallerySection.jsx";
 import { IdFetch } from "../Component/IdFetch.jsx";

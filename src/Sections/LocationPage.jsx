@@ -1,5 +1,5 @@
 import React from "react";
-import NavBar from "../component/NavBar.jsx";
+import NavBar from "../Component/NavBar.jsx";
 
 import ExtraSection from "../Component/ExtraSection.jsx";
 import Footer1 from "../Component/Footer1";

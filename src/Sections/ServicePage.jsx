@@ -1,7 +1,7 @@
 // ServicesPage.jsx
 import React, { useState, useEffect } from "react";
 import Card from "../Component/Ourcard";
-import NavBar from "../component/NavBar";
+import NavBar from "../Component/NavBar";
 import ExtraSection from "../Component/ExtraSection";
 import Footer1 from "../Component/Footer1";
 import WhatsappButton from "../Component/WhatsappButton";
